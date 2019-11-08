@@ -9,14 +9,12 @@ setup(name='lime',
       license='BSD',
       packages= find_packages(exclude=['js', 'node_modules', 'tests']),
       install_requires=[
-          'matplotlib==2.1.0;python_version<"3.0"',
-          'matplotlib;python_version>="3.0"',
+          'matplotlib',
+          'matplotlib',
           'numpy',
           'scipy',
           'progressbar',
-          'scikit-learn>=0.18',
-          'scikit-image>=0.12;python_version>="3.0"',
-          'scikit-image<0.15;python_version<"3.0"'
+          'scikit-learn>=0.18'
       ],
       include_package_data=True,
       zip_safe=False)
